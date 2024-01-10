@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Introduction</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+         body {
+            font-family: 'Bookman Old Style', serif;
             margin: 20px;
-            line-height: 1.5;
+            display: flex;
+        }
+        .left-frame {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid #ccc;
+        }
+        .right-frame {
+            flex: 2;
+            padding: 20px;
         }
         header {
             text-align: center;
@@ -17,46 +26,63 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        main_p
-        {
+        main h2 {
+            color: skyblue; /* Set the heading color to sky blue */
+        }
+        main p {
             text-align: justify;
+        }
+        .profile-pic {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .specializations {
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dr. Akshay Parundekar</h1>
-        <p>Welcome to my GitHub Page!</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Hello, I am Dr Akshay Parundekar. I am a computational biologist experienced in machine learning based tools coupled with skills in kinetic and statistical modeling. 
-              This makes me uniquely poised to provide insightful solutions and novel algorithms to address complex prediction problems. I have worked with clients such as Bial Biotech and Riche I2O in the disease areas of 
-              Parkinson's disease (PD) and Ulcerative colitis (UC). I have analyzed longitudinal clinical data addressing the goals like patient stratification, biomarker discovery and treatment cost mitigation.
-            </p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-            <p>
-                Here are some of the projects I have worked on:
-                <ul>
-                    <li><a href="#">Project 1</a></li>
-                    <li><a href="#">Project 2</a></li>
-                    <!-- Add more projects as needed -->
-                </ul>
-            </p>
-        </section>
-
+    <div class="left-frame">
+        <header>
+            <h1>Dr Akshay Parundekar</h1>
+            <p>Computational Biology and predictive analytics</p>
+        </header>
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="specializations">
+            <h2>Specializations</h2>
+            <p>ML guided patient selection | Kinetic and statistical modeling | Systems biology | Single cell analysis | Bayesian analysis |NLP</p>
+            <!-- Add more specializations as needed -->
+        </div>
         <section>
             <h2>Contact Me</h2>
             <p>
                 Feel free to reach out to me via email at <a href="mailto:akshay.parundekar@gmail.com">your.email@example.com</a>.
             </p>
         </section>
-    </main>
+    </div>
+    <div class="right-frame">
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hello, I am Dr Akshay Parundekar. I am a computational biologist experienced in machine learning based tools coupled with skills in kinetic and statistical modeling. This makes me uniquely poised to provide insightful solutions and novel algorithms to address complex prediction problems. I have worked with clients such as Bial Biotech and Roche I2O in the disease areas of Parkinson's disease (PD) and Ulcerative colitis (UC). I have analyzed longitudinal clinical data addressing the goals like patient stratification, biomarker discovery and treatment cost mitigation.
+
+                </p>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <p>
+                    Here are some of the projects I have worked on:
+                    <ul>
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <!-- Add more projects as needed -->
+                    </ul>
+                </p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
